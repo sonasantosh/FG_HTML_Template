@@ -1,0 +1,276 @@
+/*------------------------------------------------
+Purpose: Project Name
+Author: Author Name
+Author URI: Author URL
+------------------------------------------------
+
+------------------------------------------------
+TABLE OF CONTENTS:
+------------------------------------------------
+
+# Typography
+
+# Components
+
+# Site Content
+	[ ## ... Page ]
+        [ ### ... ]
+
+# Responsive
+    ## Typography
+        [ ### Custom Padding ]
+
+    ## Components
+        [ ### ... ]
+
+    ## Site Content
+        [ ### ... ]
+**/
+
+/*------------------------------------------------
+# Typography
+------------------------------------------------*/
+/* Import the font style */
+@import url(../font/fonts.css);
+
+/* Default Style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem; 
+  line-height: 1.4;
+  color: #000;
+  background-color: #fff;
+}
+
+/* Focus visibility for keyboard users */
+a:focus,
+button:focus {
+  outline: 3px solid #2d7fc1;
+  outline-offset: 0.125rem;
+}
+
+/* Navbar  Start*/
+.navbar-brand small {
+  display: block;
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.btn-contact {
+  background: #c21875;
+  color: #fff;
+  border-radius: 3.125rem;
+  padding: 0.5rem 1.375rem;
+  font-weight: 500;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+  background: #9e145e;
+  color: #fff;
+}
+/* Smooth dropdown animation */
+.dropdown-menu {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Improve accessibility focus */
+.dropdown-item:focus,
+.nav-link:focus {
+  outline: 0.125rem solid #2d7fc1;
+  outline-offset: 0.125rem;
+}
+/* Navbar End */
+
+
+/* Hero */
+.hero-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 30% 0;
+  max-height: 18.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: 26.25rem;
+  object-fit: cover;
+}
+
+.hero-banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(18, 45, 75, 0.95) 35%,
+    rgba(18, 45, 75, 0.5) 65%,
+    rgba(18, 45, 75, 0) 100%
+  );
+  display: flex;
+  align-items: center;
+  padding: 0 3.125rem;
+  color: #ffffff;
+}
+
+.hero-banner-content h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-banner-content span {
+  font-weight: 200;
+}
+
+.hero-banner-img {
+  width: 100%;
+  height: 18.75rem;
+  object-fit: cover;
+}
+/* -------WhoweAreCard Section---------- */
+.section-bottom-spacing {
+  padding-bottom: 3.125rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #1e3a5f;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.highlight-text {
+  color: #5aa6d6;
+  font-weight: 700;
+}
+
+.info-text {
+  font-size: 0.875rem; 
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 0.9375rem;
+}
+.info-card {
+  padding: 2.5rem;
+  border-radius: 3.125rem 0 3.125rem 0;
+}
+
+.info-card.withbg {
+  background-color: #eff7fc;
+}
+
+.whoweare-purpose-content {
+  padding: 0 5rem; 
+}
+
+/* -------WhoweAreBottom Section---------- */
+.whoweare-bottom-image {
+  position: relative;
+}
+
+.whoweare-bottom-image:after {
+  content: "";
+  background: linear-gradient(
+    to right,
+    rgba(18, 45, 75, 0.95) 35%,
+    rgba(18, 45, 75, 0.5) 65%,
+    rgba(18, 45, 75, 0) 100%
+  );
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.whoweare-bottom-image-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 2;
+  padding: 2.5rem 3.125rem; 
+}
+
+.whoweare-bottom-image-content p {
+  font-size: 1.125rem; 
+  line-height: 1.5;
+}
+.card-image{
+    border-radius: 3.125rem 0 3.125rem 0;
+}
+/* -------Footer-------------- */
+.footer-bg {
+  background-color: #003473;
+}
+
+.footer-wrap p {
+  color: #fff;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* Responsive Begin */
+@media (max-width: 992px) { 
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  .whoweare-purpose-content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) { 
+  .hero-banner-content h1 {
+        font-size: 2rem;
+    }
+}
+/* Responsive End */
+
+
+
+
+/* Reduced motion support */
+/* 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+} */
+
+/* @media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+} */
+
+
+
+/*------------------------------------------------
+# Components
+------------------------------------------------*/
+
+/*------------------------------------------------
+# Site Content
+	[ ## *** Page ]
+    	[ ### *** Section ]
+------------------------------------------------*/
