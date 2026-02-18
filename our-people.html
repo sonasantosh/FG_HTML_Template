@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- Added Bootstrap Library -->
+  <link rel="stylesheet" href="./assets/libraries/bootstrap/css/bootstrap.min.css" />
+  <!-- Added Owl carousel Library -->
+  <link rel="stylesheet" href="./assets/libraries/owlcarousel/css/owl.carousel.min.css" />
+  <!-- Custom Style of Page -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Title of the Page -->
+  <title>First Customer Contact Ltd</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm mb-3" aria-label="Main navigation">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="../assets/images/fg-header-logo.png" class="header-logo" alt="Header Logo" />
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-lg-4 text-center">
+            <!-- About Us Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About Us
+              </a>
+
+              <ul class="dropdown-menu shadow border-0" aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="#">Who We Are</a></li>
+                <li><a class="dropdown-item" href="#">Leadership Team</a></li>
+                <li><a class="dropdown-item" href="#">Our Values</a></li>
+              </ul>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Our Services
+              </a>
+
+              <ul class="dropdown-menu shadow border-0" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="#">Inbound Support</a></li>
+                <li><a class="dropdown-item" href="#">Outbound Sales</a></li>
+                <li><a class="dropdown-item" href="#">Customer Care</a></li>
+              </ul>
+            </li>
+
+            <!-- Normal Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+          </ul>
+
+          <!-- Mobile CTA -->
+          <div class="d-lg-none mt-3 text-center">
+            <a href="#" class="btn btn-contact">Contact us</a>
+          </div>
+        </div>
+
+        <!-- Desktop CTA -->
+        <div class="d-none d-lg-block">
+          <a href="#" class="btn btn-contact">Contact us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- HERO Banner-->
+  <section class="inner-hero-banner-wrapper" aria-labelledby="who-we-are-header-banner">
+    <div class="container hero-wrapper">
+      <img src="../assets/images/whoweare-bottom-image.jpg" class="hero-banner-img"
+        alt="Two colleagues smiling and having a discussion in an office environment" />
+      <div class="row hero-banner-content">
+        <div class="col-md-4">
+          <h1 id="who-we-are-heading"><span>Our</span> Values</h1>
+          <p>Our core values guide every decesion make</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="carousel-section sec-padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="carousel-wrapper owl-carousel owl-theme">
+            <div class="single-carousel">
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere similique, voluptate laudantium laborum commodi quia quos cupiditate illo labore aspernatur quaerat, magnam fuga ad doloribus.
+              </p>
+              <div class="name-job-title-wrapper">
+                <strong>- Firstname Surname,</strong>
+                <strong>Job Title</strong>
+              </div>
+            </div>
+            <div class="single-carousel">
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere similique, voluptate laudantium laborum commodi quia quos cupiditate illo labore aspernatur quaerat, magnam fuga ad doloribus.
+              </p>
+              <div class="name-job-title-wrapper">
+                <strong>- Firstname Surname,</strong>
+                <strong>Job Title</strong>
+              </div>
+            </div>
+            <div class="single-carousel">
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere similique, voluptate laudantium laborum commodi quia quos cupiditate illo labore aspernatur quaerat, magnam fuga ad doloribus.
+              </p>
+              <div class="name-job-title-wrapper">
+                <strong>- Firstname Surname,</strong>
+                <strong>Job Title</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer-wrap text-center footer-bg">
+    <div class="container">
+      <div class="col-12  text-white py-4">
+        <p class="mb-0">
+          &copy; 2024 First Customer Contact Ltd. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Added Jquery Library -->
+  <script src="./assets/libraries/jquery/jquery-3.7.1.slim.min.js"></script>
+  <!-- Added Bootstrap Library -->
+  <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel Library -->
+  <script src="./assets/libraries/owlcarousel/js/owl.carousel.min.js"></script>
+  <!-- Main JS File -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

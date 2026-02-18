@@ -45,7 +45,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 1rem; 
+  font-size: 1rem;
   line-height: 1.4;
   color: #000;
   background-color: #fff;
@@ -78,6 +78,7 @@ button:focus {
   background: #9e145e;
   color: #fff;
 }
+
 /* Smooth dropdown animation */
 .dropdown-menu {
   transition: all 0.2s ease-in-out;
@@ -89,6 +90,7 @@ button:focus {
   outline: 0.125rem solid #2d7fc1;
   outline-offset: 0.125rem;
 }
+
 /* Navbar End */
 
 
@@ -113,12 +115,10 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(18, 45, 75, 0.95) 35%,
-    rgba(18, 45, 75, 0.5) 65%,
-    rgba(18, 45, 75, 0) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(18, 45, 75, 0.95) 35%,
+      rgba(18, 45, 75, 0.5) 65%,
+      rgba(18, 45, 75, 0) 100%);
   display: flex;
   align-items: center;
   padding: 0 3.125rem;
@@ -141,6 +141,7 @@ button:focus {
   height: 18.75rem;
   object-fit: cover;
 }
+
 /* -------WhoweAreCard Section---------- */
 .section-bottom-spacing {
   padding-bottom: 3.125rem;
@@ -160,11 +161,12 @@ button:focus {
 }
 
 .info-text {
-  font-size: 0.875rem; 
+  font-size: 0.875rem;
   line-height: 1.5;
   color: #555;
   margin-bottom: 0.9375rem;
 }
+
 .info-card {
   padding: 2.5rem;
   border-radius: 3.125rem 0 3.125rem 0;
@@ -175,7 +177,7 @@ button:focus {
 }
 
 .whoweare-purpose-content {
-  padding: 0 5rem; 
+  padding: 0 5rem;
 }
 
 /* -------WhoweAreBottom Section---------- */
@@ -185,12 +187,10 @@ button:focus {
 
 .whoweare-bottom-image:after {
   content: "";
-  background: linear-gradient(
-    to right,
-    rgba(18, 45, 75, 0.95) 35%,
-    rgba(18, 45, 75, 0.5) 65%,
-    rgba(18, 45, 75, 0) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(18, 45, 75, 0.95) 35%,
+      rgba(18, 45, 75, 0.5) 65%,
+      rgba(18, 45, 75, 0) 100%);
   position: absolute;
   left: 0;
   right: 0;
@@ -205,16 +205,18 @@ button:focus {
   transform: translateY(-50%);
   left: 0;
   z-index: 2;
-  padding: 2.5rem 3.125rem; 
+  padding: 2.5rem 3.125rem;
 }
 
 .whoweare-bottom-image-content p {
-  font-size: 1.125rem; 
+  font-size: 1.125rem;
   line-height: 1.5;
 }
-.card-image{
-    border-radius: 3.125rem 0 3.125rem 0;
+
+.card-image {
+  border-radius: 3.125rem 0 3.125rem 0;
 }
+
 /* -------Footer-------------- */
 .footer-bg {
   background-color: #003473;
@@ -227,21 +229,23 @@ button:focus {
 }
 
 /* Responsive Begin */
-@media (max-width: 992px) { 
-  .navbar .dropdown:hover > .dropdown-menu {
+@media (max-width: 992px) {
+  .navbar .dropdown:hover>.dropdown-menu {
     display: block;
     margin-top: 0;
   }
+
   .whoweare-purpose-content {
     padding: 0;
   }
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .hero-banner-content h1 {
-        font-size: 2rem;
-    }
+    font-size: 2rem;
+  }
 }
+
 /* Responsive End */
 
 
@@ -266,8 +270,183 @@ button:focus {
 
 
 /*------------------------------------------------
-# Components
+# Carousel Components
 ------------------------------------------------*/
+.sec-padding {
+  padding: 3rem 0;
+}
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.single-carousel {
+  background-color: #eff7fc;
+  padding: 2rem 4rem;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: all 300ms ease;
+  opacity: .7;
+}
+
+.owl-item.active.center .single-carousel {
+  opacity: 1;
+}
+
+.owl-item.active.center .single-carousel,
+.owl-item.active.center .single-carousel:hover {
+  background-color: #e10069;
+  color: #fff;
+}
+
+.single-carousel .testimonial-text {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.name-job-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  font-size: 1.25rem;
+}
+
+/* Carousel Nav */
+/* .carousel-wrapper .owl-nav {
+  position: absolute;
+} */
+.carousel-wrapper .owl-nav .owl-prev,
+.carousel-wrapper .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0 !important;
+  height: 40px;
+  width: 40px;
+  border: 2px solid transparent !important;
+}
+
+.carousel-wrapper .owl-nav .owl-prev:focus,
+.carousel-wrapper .owl-nav .owl-next:focus {
+  border-color: #e10069 !important;
+}
+
+.carousel-wrapper .owl-nav .owl-prev {
+  left: calc(50% - 450px);
+}
+
+.carousel-wrapper .owl-nav .owl-next {
+  left: calc(50% + 450px);
+}
+
+.carousel-wrapper .owl-nav .owl-prev span,
+.carousel-wrapper .owl-nav .owl-next span {
+  padding: 10px;
+  border-style: solid;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.carousel-wrapper .owl-nav .owl-prev span {
+  border-width: 0px 0px 4px 4px;
+  left: 7px;
+}
+
+.carousel-wrapper .owl-nav .owl-next span {
+  border-width: 4px 4px 0 0;
+  left: -7px;
+}
+
+@media screen and (max-width: 1439.98px) {
+
+  .carousel-wrapper .owl-nav .owl-prev {
+    left: calc(50% - 400px);
+  }
+
+  .carousel-wrapper .owl-nav .owl-next {
+    left: calc(50% + 400px);
+  }
+}
+@media screen and (max-width: 1199.98px) {
+
+  .carousel-wrapper .owl-nav .owl-prev {
+    left: calc(50% - 375px);
+  }
+
+  .carousel-wrapper .owl-nav .owl-next {
+    left: calc(50% + 375px);
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .single-carousel {
+    max-width: calc(100% - 30px);
+  }
+
+  .carousel-wrapper .owl-nav .owl-prev {
+    left: 40px;
+  }
+
+  .carousel-wrapper .owl-nav .owl-next {
+    left: calc(100% - 40px);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .single-carousel {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .carousel-wrapper .owl-nav .owl-prev,
+  .carousel-wrapper .owl-nav .owl-next {
+    height: 25px;
+    width: 25px;
+  }
+
+  .carousel-wrapper .owl-nav .owl-prev {
+    left: 30px;
+  }
+
+  .carousel-wrapper .owl-nav .owl-next {
+    left: calc(100% - 30px);
+  }
+
+  .carousel-wrapper .owl-nav .owl-prev span {
+    border-width: 0px 0px 3px 3px;
+    left: 3px;
+    padding: 4px;
+  }
+
+  .carousel-wrapper .owl-nav .owl-next span {
+    border-width: 3px 3px 0 0;
+    left: -2px;
+    padding: 4px;
+  }
+
+  .single-carousel .testimonial-text,
+  .name-job-title-wrapper {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+
+
+  .name-job-title-wrapper {
+    font-size: .875rem;
+  }
+}
 
 /*------------------------------------------------
 # Site Content
