@@ -100,7 +100,7 @@ button:focus {
   overflow: hidden;
   border-radius: 0 0 30% 0;
   max-height: 18.75rem;
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 2.5rem; */
 }
 
 .hero-img {
@@ -141,7 +141,12 @@ button:focus {
   height: 18.75rem;
   object-fit: cover;
 }
-
+.hero-banner-blue-bg {
+  background-color: #eef7fc;
+}
+.hero-banner-white-bg {
+  background-color: #fff;
+}
 /* -------WhoweAreCard Section---------- */
 .section-bottom-spacing {
   padding-bottom: 3.125rem;
@@ -196,7 +201,7 @@ button:focus {
   right: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 0.9;
 }
 
 .whoweare-bottom-image-content {
@@ -220,36 +225,14 @@ button:focus {
 /* -------Footer-------------- */
 .footer-bg {
   background-color: #003473;
+  font-size: 0.875rem;
 }
 
 .footer-wrap p {
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-bottom: 0;
 }
-
-/* Responsive Begin */
-@media (max-width: 992px) {
-  .navbar .dropdown:hover>.dropdown-menu {
-    display: block;
-    margin-top: 0;
-  }
-
-  .whoweare-purpose-content {
-    padding: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero-banner-content h1 {
-    font-size: 2rem;
-  }
-}
-
-/* Responsive End */
-
-
-
 
 /* Reduced motion support */
 /* 
@@ -366,15 +349,163 @@ button:focus {
   border-width: 4px 4px 0 0;
   left: -7px;
 }
+/* .carousel-section-title-wrap {
+    padding-bottom: 2rem;
+} */
+.carousel-section-title-wrap p{
+   color:#555;
+   margin-bottom: 0;
+}
+.carousel-card-white .single-carousel{
+  background-color: #fff;
+}
+.carousel-sec-bg{
+  background-color: #eef7fc;
+  padding:3.125rem 0;
+}
+/* -----------------Credential Page Begin---------------- */
+.crd-top-inner {
+    max-width: 77%;
+    margin: 0 auto;
+    text-align: center;
+    padding:4.375rem 0
+}
+.crd-top-inner p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+.crd-logo-wrap img {
+  max-width: 130px;
+}
+.crd-logo-wrap {
+  background: #fff;
+  padding: 10px;
+}
+.crd-award-winning-section .container {
+  background: #eef7fc;
+}
+.crd-team-logo-wrapper{
+  margin:2.5rem 0 0;
+}
+.on-image-title {
+    color: #fff;
+}
+.carousel-section-title-wrap {
+    padding: 0 5rem 2.5rem;
+}
+/* -----------------Credential Page End---------------- */
 
+/* Careers Begin */
+.view-vacancy-button button {
+    border-radius: 12px;
+    background: #5aade0;
+    border-color: #5aade0;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+}
+.view-vacancy-button button img {
+    margin-left: 10px;
+}
+.view-vacancy-button button:hover {
+    background: #003473;
+    border-color: #003473;
+}
+/* Careers End */
+
+/* Your Benifits Begin */
+.benefits-section .benefits-bg {
+    background: #eef7fc;
+    padding:80px !important;
+}
+
+.section-title span {
+    color: #5BA6D6;
+    font-weight: 700;
+}
+
+/* Card */
+.benefit-card {
+    background: #fff;
+    border-radius: 3.125rem 0 3.125rem 0;
+    padding: 50px 25px;
+    text-align: center;
+    transition: all 0.4s ease;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card:hover {
+    background: #E6007E;
+    color: #fff;
+}
+
+.benefit-card:hover .icon-circle {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 8px solid #4ba2dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 38px;
+    color: #143E6E;
+    transition: 0.3s ease;
+}
+
+/* Active Pink Card */
+.benefit-card.active {
+    background: #E6007E;
+    color: #fff;
+}
+.benefit-card.active .icon-circle {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Hover Effect */
+
+.hover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    opacity: 0;
+    color: #ffffff;
+    transition: 0.4s ease;
+}
+
+.benefit-card:hover .card-main {
+    opacity: 0;
+}
+
+.benefit-card:hover .hover-content {
+    opacity: 1;
+}
+
+/* Your Benifits End */
+
+.container {
+  padding:0 !important;
+}
 @media screen and (max-width: 1439.98px) {
 
   .carousel-wrapper .owl-nav .owl-prev {
-    left: calc(50% - 400px);
+    left: calc(50% - 360px);
   }
 
   .carousel-wrapper .owl-nav .owl-next {
-    left: calc(50% + 400px);
+    left: calc(50% + 360px);
   }
 }
 @media screen and (max-width: 1199.98px) {
@@ -385,6 +516,13 @@ button:focus {
 
   .carousel-wrapper .owl-nav .owl-next {
     left: calc(50% + 375px);
+  }
+  .container {
+    padding:0 1rem !important;
+  }
+  .crd-top-inner {
+    max-width: 100%;
+    padding: 3rem 2rem;
   }
 }
 
@@ -400,6 +538,15 @@ button:focus {
   .carousel-wrapper .owl-nav .owl-next {
     left: calc(100% - 40px);
   }
+  /* ---------- */
+  .navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  .whoweare-purpose-content {
+    padding: 0;
+  }
+  /* ---------- */
 }
 
 @media screen and (max-width: 767.98px) {
@@ -438,6 +585,47 @@ button:focus {
   .name-job-title-wrapper {
     font-size: 1rem;
   }
+  /* ---------- */
+  .hero-banner-content h1 {
+    font-size: 2rem;
+  }
+  .whoweare-bottom-image-content {
+    position: static;
+    transform: none;
+    padding: 1.5rem 1rem;
+    border: 1px solid #e7e6e6;
+    margin: 0;
+  }
+
+  .on-image-title {
+    color: #000;
+  }
+  .whoweare-bottom-image-content p{
+    color: #000;
+  }
+  .benefits-section .benefits-bg {
+    padding: 2.5rem 1.25rem !important;
+    margin-bottom: 3rem;
+  }
+  .benefits-section {
+    padding: 0 1rem;
+  }
+  .carousel-section-title-wrap {
+    padding: 0 1rem 1.5rem;
+  }
+  .info-card {
+    padding: 1rem;
+  }
+  .sec-padding {
+    padding: 2rem 0;
+  }
+  .section-bottom-spacing {
+    padding-bottom: 2rem;
+  }
+  .footer-bg {
+    margin: 0 1rem;
+  }
+  /* ---------- */
 }
 
 @media screen and (max-width: 575.98px) {
